@@ -9,10 +9,37 @@
   align-items: center;
 }
 
+header .header-img {
+  width: 100%;
+}
+header .header-img img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+header h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  color: black;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+header h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 15px;
+  letter-spacing: 5px;
+  color: black;
+  text-transform: uppercase;
+}
+
 header nav ul {
   display: block;
-  margin: 0 auto;
-  text-align: center; /*IE*/
+  margin: 5px auto;
+  text-align: center;
   width: fit-content;
 }
 
@@ -21,11 +48,11 @@ header nav ul li {
   padding: 16px 16px;
 }
 header nav a {
-  font-family: "Open Sans", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: 3px;
-  color: #3586d8;
+  color: #08325c;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -41,9 +68,22 @@ main .meist-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin-top: 30px;
 }
 main .meist-container .meist-text {
   margin: 5px;
+}
+
+.gallery-links {
+  display: flex;
+  flex-flow: row wrap;
+  display: -webkit-flex;
+  -webkit-flex-flow: row wrap;
+  display: -moz-flex;
+  -moz-flex-flow: row wrap;
+  justify-content: center;
+  -o-flex-flow: row wrap;
+  justify-content: center;
 }
 
 .gallery-image {
@@ -63,18 +103,14 @@ main .meist-container .meist-text {
 }
 
 .post-header {
-  /*kujundus*/
-
-  font-family: "Open Sans", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
   font-size: 22px;
   letter-spacing: 3px;
   line-height: 24px;
-  color: #ffffff;
+  color: black;
   text-transform: uppercase;
-  text-shadow: 3px 3px 9px #111111;
-
-  /*positsioneerimine*/
+  text-shadow: 3px 3px 9px #ffffff;
 
   position: absolute;
   top: 50%;
@@ -82,24 +118,12 @@ main .meist-container .meist-text {
   transform: translate(-50%, -50%);
 }
 
-.gallery-links {
-  display: flex;
-  flex-flow: row wrap;
-  display: -webkit-flex;
-  -webkit-flex-flow: row wrap;
-  display: -moz-flex;
-  -moz-flex-flow: row wrap;
-  justify-content: center;
-  -o-flex-flow: row wrap;
-  justify-content: center;
-}
-
 footer {
   width: calc(100% - 80px);
+  height: 100px;
   padding: 40px 40px;
   background-color: #291722;
   margin-top: 20px;
-  height: 100px;
 }
 
 footer ul {
