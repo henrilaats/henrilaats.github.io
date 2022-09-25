@@ -9,7 +9,7 @@
     />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Avaleht</title>
+    <title>Ostukorv</title>
     <!-- Bootstrap CSS --->
     <link
       rel="stylesheet"
@@ -103,7 +103,7 @@
           <li class="nav-item"><a class="nav-link" href="meist.html">Meist</a></li>
         </ul>
         <!-- search --->
-        <form class="form-inline my-2 my-lg-0">
+        <form class="form-inline m-2 my-lg-0">
           <input
             class="form-control mr-sm-2"
             type="search"
@@ -118,101 +118,106 @@
         </form>
       </div>
       <!-- cart --->
-      <!--
-            <svg class="lnr mt-auto mr-3 my-3 lnr-cart"><use xlink:href="#lnr-cart"></use></svg>
-            --->
-      <button class="btn btn-dark my-2 my-sm-0" type="submit">
-        <svg class="lnr lnr-cart"><use xlink:href="#lnr-cart"></use></svg>
-      </button>
+      <a href="cart.html"
+        ><button class="btn btn-dark my-2 my-sm-0" type="submit">
+          <svg class="lnr lnr-cart">
+            <use xlink:href="#lnr-cart"></use>
+          </svg></button
+      ></a>
     </nav>
-    <!-- breadcrumb --->
     <section>
+      <!-- breadcrumb --->
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb bg-white ml-2">
-          <!-- это иконка с домиком, но у меня не получилось её выровнять нормально
-                    <li class="breadcrumb-item active" aria-current="page"><button class="btn btn-link btn-lg my-2 my-sm-0" type="submit"><svg class="lnr lnr-home"><use xlink:href="#lnr-home"></use></svg></button></li>
-                    --->
-          <li class="breadcrumb-item active" aria-current="page">Avaleht</li>
+          <li class="breadcrumb-item"><a href="index.html">Avaleht</a></li>
+          <li class="breadcrumb-item active">Ostukorv</li>
         </ol>
       </nav>
     </section>
-    <!-- jumbotron --->
-
-    <section>
-      <div class="jumbotron jumbotron-fluid text-center">
-        <div class="container">
-          <h1 class="display-2 text-primary">Jumbotron</h1>
-          <p class="lead">Veebilehtede loomine edasijõudnutele aine raames</p>
-        </div>
-      </div>
-    </section>
-    <!-- TODO! --->
-    <!-- tooted --->
+    <!-- ostukorv --->
     <section>
       <div class="container">
-        <h2 class="h mb-3">TOP</h2>
         <div class="row">
-          <div class="col-md-4 mb-4">
-            <div class="card shadow-sm border-0 h-100 text-center">
-              <a href="#"><img src="soap.png" alt="" class="card-img-top" /></a>
-              <div class="card-body">
-                <h5><a href="#" class="text-dark">Toode 1</a></h5>
-                <p class="text-muted card-text">15.99&#8364;</p>
-                <a role="button" href="toode.html" class="btn btn-outline-dark"
-                  >Vaata</a
-                >
+          <div class="col-lg-6 d-flex align-items-start flex-column">
+            <div class="mb-auto p-2"><h4>Ostukorvis on 1 toode</h4></div>
+            <div class="mb-auto p-2 row">
+              <div class="col-lg-6">
+                <img src="soap.png" width="100%" />
               </div>
+              <div class="col-lg-6">
+                <p>15.99&#8364;</p>
+                <p>Toode 1</p>
+                <select class="form-control col-lg-5 form-sm" id="kogus">
+                  <option>0</option>
+                  <option selected="selected">1</option>
+                  <option>2</option>
+                  <option>3</option>
+                </select>
+                <br />
+              </div>
+            </div>
+            <div class="p-2">
+              <p>Tarne: <span class="text-primary">tasuta</span></p>
+              <p>Kokku: <span class="text-primary">15.99&#8364;</span></p>
+            </div>
+            <div class="p-2 mx-auto">
+              <a href="kinnitus.html" class="btn btn-dark btn-lg mb-3">Maksa</a>
             </div>
           </div>
-          <div class="col-md-4 mb-4">
-            <div class="card shadow-sm border-0 h-100 text-center">
-              <a href="#"><img src="soap.png" alt="" class="card-img-top" /></a>
-              <div class="card-body">
-                <h5><a href="#" class="text-dark">Toode 2</a></h5>
-                <p class="text-muted card-text">12.99&#8364;</p>
-                <a role="button" href="#" class="btn btn-outline-dark">Vaata</a>
+          <div class="col-lg-6">
+            <form action="/action_page.php" class="was-validated">
+              <div class="form-group">
+                <label for="name">Nimi</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Sisesta enda nimi"
+                  name="name"
+                  required
+                />
+                <div class="invalid-feedback">Kohustuslik</div>
               </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="card shadow-sm border-0 h-100 text-center">
-              <a href="#"><img src="soap.png" alt="" class="card-img-top" /></a>
-              <div class="card-body">
-                <h5><a href="#" class="text-dark">Toode 3</a></h5>
-                <p class="text-muted card-text">9.99&#8364;</p>
-                <a role="button" href="#" class="btn btn-outline-dark">Vaata</a>
+              <div class="form-group">
+                <label for="name">Aadress</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="aadress"
+                  placeholder="Sisesta aadress"
+                  name="aadress"
+                  required
+                />
+                <div class="invalid-feedback">Kohustuslik</div>
               </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="card shadow-sm border-0 h-100 text-center">
-              <a href="#"><img src="soap.png" alt="" class="card-img-top" /></a>
-              <div class="card-body">
-                <h5><a href="#" class="text-dark">Toode 4</a></h5>
-                <p class="text-muted card-text">18.99&#8364;</p>
-                <a role="button" href="#" class="btn btn-outline-dark">Vaata</a>
+              <div class="form-group">
+                <label for="name">Vali tarneviis:</label>
+                <select class="form-select">
+                    <option>Pakiautomaat</option>
+                    <option>Koju toomine</option>
+                    <option>Poest kätte saamine</option>
+                  </select>
+                  <div class="invalid-feedback">Kohustuslik</div>
               </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="card shadow-sm border-0 h-100 text-center">
-              <a href="#"><img src="soap.png" alt="" class="card-img-top" /></a>
-              <div class="card-body">
-                <h5><a href="#" class="text-dark">Toode 5</a></h5>
-                <p class="text-muted card-text">1.99&#8364;</p>
-                <a role="button" href="#" class="btn btn-outline-dark">Vaata</a>
+              <div class="form-group">
+                <label for="makseviis">Vali makseviis:</label>
+                <select class="form-select" id="makseviis">
+                    <option>LHV</option>
+                    <option>SEB</option>
+                    <option>Swedbank</option>
+                    <option>Luminor</option>
+                  </select>
+                  <div class="invalid-feedback">Kohustuslik</div>
               </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="card shadow-sm border-0 h-100 text-center">
-              <a href="#"><img src="soap.png" alt="" class="card-img-top" /></a>
-              <div class="card-body">
-                <h5><a href="#" class="text-dark">Toode 6</a></h5>
-                <p class="text-muted card-text">5.99&#8364;</p>
-                <a role="button" href="#" class="btn btn-outline-dark">Vaata</a>
+              
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label text-dark" for="flexCheckDefault"> &nbsp &nbsp Nõustun tingimustega </label>
               </div>
-            </div>
+              <p></p>
+
+              <a href="index.html" class="btn btn-primary">Telli</a>
+            </form>
           </div>
         </div>
       </div>
@@ -227,7 +232,6 @@
       rel="stylesheet"
     />
     <footer class="footer">
-    
       <div class="container text-center">
         <a href="#" class="text-info">Tel:55555555</a>
         <a href="#" class="text-info">seebid@gmail.com</a>

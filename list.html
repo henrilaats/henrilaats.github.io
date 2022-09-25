@@ -9,7 +9,7 @@
     />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Avaleht</title>
+    <title>Vannitooted // Seebid ja du&scaron;igeelid</title>
     <!-- Bootstrap CSS --->
     <link
       rel="stylesheet"
@@ -61,7 +61,7 @@
               <a class="dropdown-item" href="#">Vannisoolad</a>
               <a class="dropdown-item" href="#">Vannipiimad</a>
               <a class="dropdown-item" href="#">Vannipommid</a>
-              <a class="dropdown-item" href="list.html"
+              <a class="dropdown-item active" href="list.html"
                 >Seebid ja du&scaron;igeelid</a
               >
             </div>
@@ -103,7 +103,7 @@
           <li class="nav-item"><a class="nav-link" href="meist.html">Meist</a></li>
         </ul>
         <!-- search --->
-        <form class="form-inline my-2 my-lg-0">
+        <form class="form-inline m-2 my-lg-0">
           <input
             class="form-control mr-sm-2"
             type="search"
@@ -118,41 +118,37 @@
         </form>
       </div>
       <!-- cart --->
-      <!--
-            <svg class="lnr mt-auto mr-3 my-3 lnr-cart"><use xlink:href="#lnr-cart"></use></svg>
-            --->
       <button class="btn btn-dark my-2 my-sm-0" type="submit">
         <svg class="lnr lnr-cart"><use xlink:href="#lnr-cart"></use></svg>
       </button>
     </nav>
-    <!-- breadcrumb --->
     <section>
+      <!-- breadcrumb --->
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb bg-white ml-2">
-          <!-- это иконка с домиком, но у меня не получилось её выровнять нормально
-                    <li class="breadcrumb-item active" aria-current="page"><button class="btn btn-link btn-lg my-2 my-sm-0" type="submit"><svg class="lnr lnr-home"><use xlink:href="#lnr-home"></use></svg></button></li>
-                    --->
-          <li class="breadcrumb-item active" aria-current="page">Avaleht</li>
+          <li class="breadcrumb-item"><a href="index.html">Avaleht</a></li>
+          <li class="breadcrumb-item">Vannitooted</li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Seebid ja du&scaron;igeelid
+          </li>
         </ol>
       </nav>
     </section>
-    <!-- jumbotron --->
-
-    <section>
-      <div class="jumbotron jumbotron-fluid text-center">
-        <div class="container">
-          <h1 class="display-2 text-primary">Jumbotron</h1>
-          <p class="lead">Veebilehtede loomine edasijõudnutele aine raames</p>
-        </div>
-      </div>
-    </section>
-    <!-- TODO! --->
     <!-- tooted --->
     <section>
       <div class="container">
-        <h2 class="h mb-3">TOP</h2>
+        <form class="form-inline mb-4">
+          <div class="form-group">
+            <label for="sort" class="control-label col-lg-4">Sorteeri</label>
+            <select class="form-control col-lg-8" id="sort">
+              <option>Populaarsemad</option>
+              <option>Odavamad enne</option>
+              <option>Kallimad enne</option>
+            </select>
+          </div>
+        </form>
         <div class="row">
-          <div class="col-md-4 mb-4">
+          <div class="col-md-3 mb-4">
             <div class="card shadow-sm border-0 h-100 text-center">
               <a href="#"><img src="soap.png" alt="" class="card-img-top" /></a>
               <div class="card-body">
@@ -164,7 +160,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-4">
+          <div class="col-md-3 mb-4">
             <div class="card shadow-sm border-0 h-100 text-center">
               <a href="#"><img src="soap.png" alt="" class="card-img-top" /></a>
               <div class="card-body">
@@ -174,7 +170,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-4">
+          <div class="col-md-3 mb-4">
             <div class="card shadow-sm border-0 h-100 text-center">
               <a href="#"><img src="soap.png" alt="" class="card-img-top" /></a>
               <div class="card-body">
@@ -184,7 +180,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-4">
+          <div class="col-md-3 mb-4">
             <div class="card shadow-sm border-0 h-100 text-center">
               <a href="#"><img src="soap.png" alt="" class="card-img-top" /></a>
               <div class="card-body">
@@ -194,7 +190,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-4">
+          <div class="col-md-3 mb-4">
             <div class="card shadow-sm border-0 h-100 text-center">
               <a href="#"><img src="soap.png" alt="" class="card-img-top" /></a>
               <div class="card-body">
@@ -204,7 +200,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-4">
+          <div class="col-md-3 mb-4">
             <div class="card shadow-sm border-0 h-100 text-center">
               <a href="#"><img src="soap.png" alt="" class="card-img-top" /></a>
               <div class="card-body">
@@ -214,6 +210,29 @@
               </div>
             </div>
           </div>
+          <div class="col-md-3 mb-4">
+            <div class="card shadow-sm border-0 h-100 text-center">
+              <a href="#"><img src="soap.png" alt="" class="card-img-top" /></a>
+              <div class="card-body">
+                <h5><a href="#" class="text-dark">Toode 7</a></h5>
+                <p class="text-muted card-text">1.59&#8364;</p>
+                <a role="button" href="#" class="btn btn-outline-dark">Vaata</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="card shadow-sm border-0 h-100 text-center">
+              <a href="#"><img src="soap.png" alt="" class="card-img-top" /></a>
+              <div class="card-body">
+                <h5><a href="#" class="text-dark">Toode 8</a></h5>
+                <p class="text-muted card-text">35.99&#8364;</p>
+                <a role="button" href="#" class="btn btn-outline-dark">Vaata</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center my-4">
+          <button type="button" class="btn btn-dark btn-lg">Lae veel</button>
         </div>
       </div>
     </section>
@@ -227,7 +246,6 @@
       rel="stylesheet"
     />
     <footer class="footer">
-    
       <div class="container text-center">
         <a href="#" class="text-info">Tel:55555555</a>
         <a href="#" class="text-info">seebid@gmail.com</a>

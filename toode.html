@@ -9,7 +9,7 @@
     />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Avaleht</title>
+    <title>Toode 1</title>
     <!-- Bootstrap CSS --->
     <link
       rel="stylesheet"
@@ -103,7 +103,7 @@
           <li class="nav-item"><a class="nav-link" href="meist.html">Meist</a></li>
         </ul>
         <!-- search --->
-        <form class="form-inline my-2 my-lg-0">
+        <form class="form-inline m-2 my-lg-0">
           <input
             class="form-control mr-sm-2"
             type="search"
@@ -118,101 +118,50 @@
         </form>
       </div>
       <!-- cart --->
-      <!--
-            <svg class="lnr mt-auto mr-3 my-3 lnr-cart"><use xlink:href="#lnr-cart"></use></svg>
-            --->
-      <button class="btn btn-dark my-2 my-sm-0" type="submit">
-        <svg class="lnr lnr-cart"><use xlink:href="#lnr-cart"></use></svg>
-      </button>
+      <a href="cart.html"
+        ><button class="btn btn-dark my-2 my-sm-0" type="submit">
+          <svg class="lnr lnr-cart">
+            <use xlink:href="#lnr-cart"></use>
+          </svg></button
+      ></a>
     </nav>
-    <!-- breadcrumb --->
     <section>
+      <!-- breadcrumb --->
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb bg-white ml-2">
-          <!-- это иконка с домиком, но у меня не получилось её выровнять нормально
-                    <li class="breadcrumb-item active" aria-current="page"><button class="btn btn-link btn-lg my-2 my-sm-0" type="submit"><svg class="lnr lnr-home"><use xlink:href="#lnr-home"></use></svg></button></li>
-                    --->
-          <li class="breadcrumb-item active" aria-current="page">Avaleht</li>
+          <li class="breadcrumb-item"><a href="index.html">Avaleht</a></li>
+          <li class="breadcrumb-item">Vannitooted</li>
+          <li class="breadcrumb-item">
+            <a href="list.html">Seebid ja du&scaron;igeelid</a>
+          </li>
+          <li class="breadcrumb-item active">Toode 1</li>
         </ol>
       </nav>
     </section>
-    <!-- jumbotron --->
-
-    <section>
-      <div class="jumbotron jumbotron-fluid text-center">
-        <div class="container">
-          <h1 class="display-2 text-primary">Jumbotron</h1>
-          <p class="lead">Veebilehtede loomine edasijõudnutele aine raames</p>
-        </div>
-      </div>
-    </section>
-    <!-- TODO! --->
-    <!-- tooted --->
+    <!-- toode --->
     <section>
       <div class="container">
-        <h2 class="h mb-3">TOP</h2>
         <div class="row">
-          <div class="col-md-4 mb-4">
-            <div class="card shadow-sm border-0 h-100 text-center">
-              <a href="#"><img src="soap.png" alt="" class="card-img-top" /></a>
-              <div class="card-body">
-                <h5><a href="#" class="text-dark">Toode 1</a></h5>
-                <p class="text-muted card-text">15.99&#8364;</p>
-                <a role="button" href="toode.html" class="btn btn-outline-dark"
-                  >Vaata</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="card shadow-sm border-0 h-100 text-center">
-              <a href="#"><img src="soap.png" alt="" class="card-img-top" /></a>
-              <div class="card-body">
-                <h5><a href="#" class="text-dark">Toode 2</a></h5>
-                <p class="text-muted card-text">12.99&#8364;</p>
-                <a role="button" href="#" class="btn btn-outline-dark">Vaata</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="card shadow-sm border-0 h-100 text-center">
-              <a href="#"><img src="soap.png" alt="" class="card-img-top" /></a>
-              <div class="card-body">
-                <h5><a href="#" class="text-dark">Toode 3</a></h5>
-                <p class="text-muted card-text">9.99&#8364;</p>
-                <a role="button" href="#" class="btn btn-outline-dark">Vaata</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="card shadow-sm border-0 h-100 text-center">
-              <a href="#"><img src="soap.png" alt="" class="card-img-top" /></a>
-              <div class="card-body">
-                <h5><a href="#" class="text-dark">Toode 4</a></h5>
-                <p class="text-muted card-text">18.99&#8364;</p>
-                <a role="button" href="#" class="btn btn-outline-dark">Vaata</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="card shadow-sm border-0 h-100 text-center">
-              <a href="#"><img src="soap.png" alt="" class="card-img-top" /></a>
-              <div class="card-body">
-                <h5><a href="#" class="text-dark">Toode 5</a></h5>
-                <p class="text-muted card-text">1.99&#8364;</p>
-                <a role="button" href="#" class="btn btn-outline-dark">Vaata</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="card shadow-sm border-0 h-100 text-center">
-              <a href="#"><img src="soap.png" alt="" class="card-img-top" /></a>
-              <div class="card-body">
-                <h5><a href="#" class="text-dark">Toode 6</a></h5>
-                <p class="text-muted card-text">5.99&#8364;</p>
-                <a role="button" href="#" class="btn btn-outline-dark">Vaata</a>
-              </div>
-            </div>
+          <div class="col-lg-6"><img src="soap.png" class="img-fluid" /></div>
+          <div class="col-lg-6">
+            <h2 class="mb-3">Toode 1</h2>
+            <h4 class="mb-3">15.99&#8364;</h4>
+            <h4 class="mb-2">Kirjeldus</h4>
+            <p class="mb-3">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+              tempor gravida ipsum, non mollis lorem luctus ac. Proin interdum
+              tortor a metus efficitur blandit vitae vitae diam. Donec tortor
+              leo, efficitur ultricies augue vel, consectetur ultrices lacus.
+              Donec sollicitudin eleifend dolor et viverra. Cras ornare velit
+              dapibus nisl gravida maximus. In vulputate semper leo non
+              ultrices. Fusce leo sem, dapibus quis turpis sed, convallis
+              consectetur metus. Integer eget quam sed leo pellentesque feugiat
+              eget in urna. Praesent eu enim velit. Suspendisse eget consequat
+              turpis.
+            </p>
+            <a href="cart.html" class="btn btn-outline-dark btn-lg mb-3"
+              >Lisa ostukorvi</a
+            >
           </div>
         </div>
       </div>
@@ -227,7 +176,6 @@
       rel="stylesheet"
     />
     <footer class="footer">
-    
       <div class="container text-center">
         <a href="#" class="text-info">Tel:55555555</a>
         <a href="#" class="text-info">seebid@gmail.com</a>
